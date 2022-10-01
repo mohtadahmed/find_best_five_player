@@ -13,17 +13,20 @@ body{
 /* Header Section CSS Starts */
 
 .header-container{
-    background-image: url(img/background-pic.jpg);
-    background-position: left;
+    /* background-image: url(img/background-pic.jpg); */
+    background-image: url(img/background-image-2.avif);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.heading{
-    color: #fff784;
+.header-div{
+    color: white;
 }
 
 .header-title{
-    color: #FF5E19;
+    /* color: #FF5E19; */
+    color: #ff4757;
     font-size: 70px;
     font-family: 'kalam', cursive;
 }
