@@ -1,4 +1,33 @@
+/* General CSS Starts */
+
 body{
-    background-color: #2d3436;
+    background-color: #1e272e;
     color: white;
+    font-family: 'ABeeZee', sans-serif;
 }
+
+/* General CSS Ends */
+
+/* ==================================================================== */
+
+/* Header Section CSS Starts */
+
+.header-container{
+    background-image: url(img/background-pic.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    color: #fff784;
+}
+
+.header-title{
+    color: #FF5E19;
+    font-size: 70px;
+    font-family: 'kalam', cursive;
+}
+
+/* Header Section CSS Ends */
+
+/* ==================================================================== */
