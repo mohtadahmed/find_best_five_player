@@ -1,7 +1,7 @@
 
 function getInputValue(inputFieldId) {
-    const getInputValue = document.getElementById(inputFieldId);
-    const getInputString = getInputValue.value;
+    const getInputFieldValue = document.getElementById(inputFieldId);
+    const getInputString = getInputFieldValue.value;
     const inputValue = parseFloat(getInputString);
     
     return inputValue;
@@ -12,24 +12,28 @@ function getInputValue(inputFieldId) {
 //  Add Event Handler to the Calculate Button
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const inputValue = getInputValue('player-amount-field');
+    const playerExpenseValue = inputValue * 5;
 
     const playerExpenseField = document.getElementById('player-expense');
-    playerExpenseField.innerHTML = inputValue;
+    playerExpenseField.innerHTML = playerExpenseValue;
 });
 
 // Add Event Handler to the Calculate Total Button
 document.getElementById('btn-calculate-total').addEventListener('click', function(){
     const managerInputValue = getInputValue('input-manager-field');
-    console.log(managerInputValue)
+    
     
     const coachInputValue = getInputValue('input-coach-field');
-    console.log(coachInputValue)
     
-    // const perPlayerExpense = getInputValue('player-amount-field')
+    
     const playerExpenseField = document.getElementById('player-expense');
-    playerExpenseField.innerHTML = getInputValue('player-amount-field');
-    console.log(playerExpenseField)
+    const playerExpenseString = playerExpenseField.innerText;
+    const playerTotalExpense = parseFloat(playerExpenseString);
+    
+    // Calculate total cost including Player, Manager and Coach
+    const totalCost =  managerInputValue + coachInputValue + playerTotalExpense;
 
-    const totalCost =  managerInputValue + coachInputValue + perPlayerExpense;
-    console.log(totalCost)
-})
+
+    const totalCostField = document.getElementById('total-cost-field');
+    totalCostField.innerHTML = totalCost;
+});
