@@ -21,7 +21,9 @@ body{
 }
 
 .header-div{
-    color: white;
+    color: #ff4757;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .header-title{
@@ -33,4 +35,13 @@ body{
 
 /* Header Section CSS Ends */
 
+/* ==================================================================== */
+
+/* Main Section CSS Starts */
+
+.player-list li{
+    margin-top: 30px;
+}
+
+/* Main Section CSS Ends */
 /* ==================================================================== */
