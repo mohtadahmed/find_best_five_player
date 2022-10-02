@@ -32,7 +32,6 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     
     // Calculate total cost including Players, Manager and Coach
     const totalCost =  managerInputValue + coachInputValue + playerTotalExpense;
-    console.log(typeof totalCost)
 
     // Set the total calculated value to the Total Cost Field
 
@@ -43,7 +42,5 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     else{
         alert('Please give a number')
     }
-    // const totalCostField = document.getElementById('total-cost-field');
-    // totalCostField.innerHTML = totalCost;
     
 });
