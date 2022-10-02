@@ -4,13 +4,15 @@ function getInputValue(inputFieldId) {
     const getInputString = getInputFieldValue.value;
     const inputValue = parseFloat(getInputString);
     
-    if(isNaN(inputValue)){
-        alert('Provide a valid number please')
+    if(isNaN(inputValue) || inputValue <= 0){
+        alert('Provide a valid and Positive Integer number please')
     }
 
     else{
         return inputValue;
     }
+    
+    return getInputFieldValue.value = '';
     
 }
 

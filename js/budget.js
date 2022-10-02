@@ -8,7 +8,13 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
 
     // Set the Total Expense of the Players
     const playerExpenseField = document.getElementById('player-expense');
-    playerExpenseField.innerHTML = playerExpenseValue;
+
+    if(inputValue <= 0){
+        playerExpenseField.innerText = '';
+    }
+    else{
+        playerExpenseField.innerText = playerExpenseValue;
+    }
 });
 
 
@@ -32,7 +38,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
     if(typeof totalCost === 'number' && typeof coachInputValue === 'number' && typeof managerInputValue === 'number'){
         const totalCostField = document.getElementById('total-cost-field');
-        totalCostField.innerHTML = totalCost;
+        totalCostField.innerText = totalCost;
     }
     else{
         alert('Please give a number')
