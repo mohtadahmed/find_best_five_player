@@ -55,7 +55,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-1-name" class="card-title my-3">Ronaldinho Gaucho</h4>
                 <p class="card-text my-4 text-muted">60 Goals | 150 Assist</p>
-                <button onclick="playerNameSelection('player-1-name')" type="button" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-1-name'); buttonDisabled('btn-player-1')" id="btn-player-1" type="button" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-2-name" class="card-title my-3">Lionel Messi</h4>
                 <p class="card-text my-4 text-muted">50 Goals | 120 Assist</p>
-                <button  onclick="playerNameSelection('player-2-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button  onclick="playerNameSelection('player-2-name'); buttonDisabled('btn-player-2')" id="btn-player-2" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div> 
             </div>
           </div>
@@ -77,7 +77,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-3-name" class="card-title my-3">Cristiano Ronaldo</h4>
                 <p class="card-text my-4 text-muted">72 Goals | 130 Assist</p>
-                <button onclick="playerNameSelection('player-3-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-3-name'); buttonDisabled('btn-player-3')" id="btn-player-3" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-4-name" class="card-title my-3">Neymar da Silva</h4>
                 <p class="card-text my-4 text-muted">40 Goals | 150 Assist</p>
-                <button onclick="playerNameSelection('player-4-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-4-name'); buttonDisabled('btn-player-4')" id="btn-player-4" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-5-name" class="card-title my-3">Philippe Coutinho</h4>
                 <p class="card-text my-4 text-muted">35 Goals | 70 Assist</p>
-                <button onclick="playerNameSelection('player-5-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-5-name'); buttonDisabled('btn-player-5')" id="btn-player-5" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-6-name" class="card-title my-3">Zinedine Zidane</h4>
                 <p class="card-text my-4 text-muted">40 Goals | 95 Assist</p>
-                <button onclick="playerNameSelection('player-6-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-6-name'); buttonDisabled('btn-player-6')" id="btn-player-6" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-7-name" class="card-title my-3">Angel Di Maria</h4>
                 <p class="card-text my-4 text-muted">35 Goals | 110 Assist</p>
-                <button onclick="playerNameSelection('player-7-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-7-name'); buttonDisabled('btn-player-7')" id="btn-player-7" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-8-name" class="card-title my-3">Kylian Mbappe</h4>
                 <p class="card-text my-4 text-muted">28 Goals | 70 Assist</p>
-                <button onclick="playerNameSelection('player-8-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-8-name'); buttonDisabled('btn-player-8')" id="btn-player-8" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-9-name" class="card-title my-3">Thierry Henry</h4>
                 <p class="card-text my-4 text-muted">30 Goals | 90 Assist</p>
-                <button onclick="playerNameSelection('player-9-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-9-name'); buttonDisabled('btn-player-9')" id="btn-player-9" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-10-name" class="card-title my-3">David Beckham</h4>
                 <p class="card-text my-4 text-muted">55 Goals | 112 Assist</p>
-                <button onclick="playerNameSelection('player-10-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-10-name'); buttonDisabled('btn-player-10')" id="btn-player-10" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-11-name" class="card-title my-3">Thomas Muller</h4>
                 <p class="card-text my-4 text-muted">39 Goals | 88 Assist</p>
-                <button onclick="playerNameSelection('player-11-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-11-name'); buttonDisabled('btn-player-11')" id="btn-player-11" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@
               <div class="card-body w-100 text-center">
                 <h4 id="player-12-name" class="card-title my-3">Karim Benzema</h4>
                 <p class="card-text my-4 text-muted">50 Goals | 108 Assist</p>
-                <button onclick="playerNameSelection('player-12-name')" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
+                <button onclick="playerNameSelection('player-12-name'); buttonDisabled('btn-player-12')" id="btn-player-12" class="btn btn-primary rounded-0 px-5 player-selection-btn">Select</button>
               </div>
             </div>
           </div>
