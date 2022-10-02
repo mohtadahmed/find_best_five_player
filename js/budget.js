@@ -4,7 +4,14 @@ function getInputValue(inputFieldId) {
     const getInputString = getInputFieldValue.value;
     const inputValue = parseFloat(getInputString);
     
-    return inputValue;
+    if(isNaN(inputValue)){
+        alert('Provide a valid number please')
+    }
+
+    else{
+        return inputValue;
+    }
+    
 }
 
 
@@ -12,8 +19,10 @@ function getInputValue(inputFieldId) {
 //  Add Event Handler to the Calculate Button
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const inputValue = getInputValue('player-amount-field');
-    const playerExpenseValue = inputValue * 5;
+    console.log(inputValue);
+    let playerExpenseValue;
 
+    playerExpenseValue = inputValue * 5;
     const playerExpenseField = document.getElementById('player-expense');
     playerExpenseField.innerHTML = playerExpenseValue;
 });
