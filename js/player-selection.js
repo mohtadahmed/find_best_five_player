@@ -1,12 +1,15 @@
+// Function for Disabled the Select Button after selecting the Player
 function buttonDisabled(buttonId){
     const playerSelectionButton = document.getElementById(buttonId);
     playerSelectionButton.disabled = true;
 }
 
+// Function for Selecting the Choosen Player and Adding them to the Selected List
 function playerNameSelection(playerId){
-    const playerNameValue = document.getElementById(playerId);
-    const playerName = playerNameValue.innerText;
+    // Get the Player Value from the Onclick Function
+    const playerName = getInnerTextFromId(playerId);
 
+    // Get the List Value and set the selected player to the List
     const playersList = document.getElementById('players-list');
 
     if(playersList.childElementCount <= 4){
